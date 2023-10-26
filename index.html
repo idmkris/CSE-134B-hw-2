@@ -10,7 +10,9 @@
     />
     <script></script>
     <style>
-      /* Your CSS styles here (if needed) */
+      h1 {
+        border: 1px dashed black;
+    }
     </style>
   </head>
   <body>
@@ -33,7 +35,12 @@
           I'm a <strong>software engineer</strong> with a passion for coding and
           problem-solving.
         </p>
-        <img src="WechatIMG110.jpeg" alt="My Profile Picture" />
+        <img
+          src="WechatIMG110.jpeg"
+          alt="My Profile Picture"
+          width="40"
+          height="50"
+        />
       </section>
 
       <section id="projects">
@@ -120,8 +127,51 @@
       </tbody>
     </table>
     <section>
-        <h3>Lab</h3>
+      <h3>Lab</h3>
+      <audio controls>
+        <source src="your-audio-file.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <video controls>
+        <source src="your-video-file.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <canvas id="myCanvas" width="400" height="200"></canvas>
 
+      <script>
+        // Get the canvas element
+        var canvas = document.getElementById("myCanvas");
+
+        // Check if the browser supports the canvas element
+        if (canvas.getContext) {
+          // Get the 2D drawing context
+          var ctx = canvas.getContext("2d");
+
+          // Drawing operations here
+          ctx.fillStyle = "blue";
+          ctx.fillRect(50, 50, 100, 100);
+        } else {
+          // Canvas is not supported
+          alert("Canvas is not supported in your browser.");
+        }
+      </script>
+      <select>
+        <optgroup label="Group 1">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+        </optgroup>
+      </select>
+      <datalist id="fruits">
+        <option value="Apple"></option>
+        <option value="Banana"></option>
+        <option value="Cherry"></option>
+        <option value="Date"></option>
+        <option value="Grape"></option>
+      </datalist>
     </section>
     <hr />
     <span>Additional content here</span>
@@ -131,7 +181,7 @@
       <pre>This is a preformatted text</pre>
     </div>
   </body>
-  
+
   <footer>
     <p>&copy; 2023 My Software Engineer Portfolio</p>
   </footer>
