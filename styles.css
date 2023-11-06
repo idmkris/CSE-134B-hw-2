@@ -1,0 +1,132 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, ol, li, form, input, textarea, button, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and font styles */
+  body {
+    background-color: #f0f0f0;
+    font-family: 'Your Custom Font', Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: var(--primary-color, #3498db);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--secondary-color, #2ecc71);
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Form styles */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: var(--primary-color, #3498db);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color, #2ecc71);
+  }
+  
+  /* Aside styles */
+  aside {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Lists and Tables styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: var(--primary-color, #3498db);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive Design - Media Queries */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0.5rem;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    section {
+      margin-bottom: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    nav a {
+      font-size: 14px;
+    }
+  }
+  
