@@ -1,157 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software Engineer Portfolio</title>
-    <meta
-      name="description"
-      content="My software engineer portfolio for recruitment."
-    />
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Software Engineer Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineer Portfolio</title>
+  <meta name="description" content="My software engineer portfolio for recruitment.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Software Engineer Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I'm a <strong>software engineer</strong> with a passion for coding and
-          problem-solving.
-        </p>
-        <img
-          src="WechatIMG110.jpeg"
-          alt="My Profile Picture"
-          width="40"
-          height="50"
-        />
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>HTML</strong></li>
-          <li><strong>CSS</strong></li>
-          <li><strong>JavaScript</strong></li>
-          <li><strong>React</strong></li>
-
-          <li></li>
-        </ul>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <fieldset>
-            <legend>Contact Form</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br />
-
-            <button type="submit">Submit</button>
-          </fieldset>
-        </form>
-      </section>
-    </main>
-
-    <aside>
-      <details>
-        <summary>Additional Information</summary>
-        <p>Here is some extra content for my portfolio.</p>
-        <a href="more.html">Learn More</a>
-      </details>
-    </aside>
-
-    <ul>
-      <li>Unordered List Item 1</li>
-      <li>Unordered List Item 2</li>
-      <li>Unordered List Item 3</li>
-    </ul>
-
-    <ol>
-      <li>Ordered List Item 1</li>
-      <li>Ordered List Item 2</li>
-      <li>Ordered List Item 3</li>
-    </ol>
-
-    <table>
-      <caption>
-        My Skills Table
-      </caption>
-      <colgroup>
-        <col />
-        <col />
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Skill</th>
-          <th>Proficiency</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>HTML5</td>
-          <td>Advanced</td>
-        </tr>
-        <tr>
-          <td>CSS3</td>
-          <td>Intermediate</td>
-        </tr>
-      </tbody>
-    </table>
-    <section>
-      <h3>Lab</h3>
-      <audio controls>
-        <source
-          src="random-acoustic-electronic-guitar-136427.mp3"
-          type="audio/mpeg"
-        />
-        Your browser does not support the audio element.
-      </audio>
-      <video controls>
-        <source src="your-video-file.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <canvas id="myCanvas" width="400" height="200"></canvas>
-      <select>
-        <optgroup label="Group 1">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-        </optgroup>
-        <optgroup label="Group 2">
-          <option value="option3">Option 3</option>
-          <option value="option4">Option 4</option>
-        </optgroup>
-      </select>
+  <main class="grid-container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a <strong>software engineer</strong> with a passion for coding and
+        problem-solving.
+      </p>
+      <img
+        src="WechatIMG110.jpeg"
+        alt="My Profile Picture"
+        width="40"
+        height="50"
+      />
     </section>
-    <hr />
 
-    <footer>
-      <p>&copy; 2023 My Software Engineer Portfolio</p>
-    </footer>
-  </body>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1</li>
+        <li>Project 2</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>HTML</strong></li>
+        <li><strong>CSS</strong></li>
+        <li><strong>JavaScript</strong></li>
+        <li><strong>React</strong></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <fieldset>
+          <legend>Contact Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br />
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <section class="lab">
+    <h3>Lab</h3>
+    <audio controls>
+      <source src="random-acoustic-electronic-guitar-136427.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <video controls>
+      <source src="your-video-file.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <select>
+      <optgroup label="Group 1">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </optgroup>
+      <optgroup label="Group 2">
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+      </optgroup>
+    </select>
+  </section>
+  <hr />
+
+  <footer>
+    <p>&copy; 2023 My Software Engineer Portfolio</p>
+  </footer>
+</body>
 </html>
