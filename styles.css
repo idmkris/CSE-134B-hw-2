@@ -5,7 +5,7 @@ body, h1, h2, h3, p, ul, ol, li, form, textarea, button, table {
 
 body {
   background-color: white;
-  font-family: "Your Custom Font", Arial, sans-serif;
+  font-family: "arial", Arial, sans-serif;
   color: #333;
 }
 
