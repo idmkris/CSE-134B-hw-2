@@ -1,98 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Software Engineer Portfolio</title>
-  <meta name="description" content="My software engineer portfolio for recruitment">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="logo-small.png" alt="Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="My software engineer portfolio for recruitment"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a <strong>software engineer</strong> with a passion for coding and
-        problem-solving.
-      </p>
-      <picture>
-        <!-- Specify the default image for small screens -->
-        <source
-          media="(max-width: 480px)"
-          srcset="about-small.jpg"
-        />
-        <!-- Specify a larger image for larger screens -->
-        <source
-          media="(min-width: 481px)"
-          srcset="about-large.jpg"
-        />
-        <!-- Provide the default image for browsers that don't support srcset -->
-        <img
-          src="about-small.jpg"
-          alt="A descriptive alt text"
-          style="object-fit: cover; object-position: center;"
-        />
-      </picture>
+    <main>
+      <section id="about">
+        <picture>
+          <!-- Specify the default image for small screens -->
+          <source
+            class="circular-image"
+            media="(max-width: 480px)"
+            srcset="WechatIMG110.jpeg"
+          />
+          <!-- Specify a larger image for larger screens -->
+          <source
+            class="circular-image"
+            media="(min-width: 481px)"
+            srcset="WechatIMG110.jpeg"
+          />
+          <!-- Provide the default image for browsers that don't support srcset -->
+          <img
+            class="circular-image"
+            src="WechatIMG110.jpeg"
+            alt="my profile photo"
+            style="object-fit: cover; object-position: center"
+          />
+        </picture>
+        <p style="text-align: center">
+          Hey I am a sde, <br />and I write weird amount of codes lolllll.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>OpenAI Blogging Platform</strong>
+            <ul>
+              <li>Engineered an auto blog-generation platform using Next.js, TypeScript and Tailwind, enabling rapid content creation and ensuring top-notch user experience.
+              </li>
+              <li>Implemented a robust user authentication and authorization system utilizing bcrypt and JWT.</li>
+              <li>Developed a backend foundation with Prisma and PlanetScale, optimizing data management and real-time
+                synchronization, resulting in a dynamic and engaging platform for bloggers and readers alike.</li>
+              <li>Integrated the OpenAI API to allow users customize the content and style of auto-generated blogs.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>MERN Social Media Website</strong>
+            <ul>
+              <li>Designed responsive front-end using React for cross-device user experience and visual aesthetics.</li>
+              <li>Built a RESTful API using Express.js and Node.js to ensure efficient data management and smooth inter- action between the front-end and back-end.
+              </li>
+              <li>Deployed using AWS Elastic Beanstalk, ensuring seamless scalability and high availability of the application.</li>
+              <li>Integrated MongoDB to provide a robust storage solution, implementing data models, CRUD operations, and
+                data validation for the application’s data.
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>Technologies</th>
+          </tr>
+          <tr>
+            <td><strong>Languages</strong></td>
+            <td>Python, SQL, C, C++, Java, JavaScript, HTML, CSS, TypeScript, Angular</td>
+          </tr>
+          <tr>
+            <td><strong>Frameworks/Tools</strong></td>
+            <td>React, Redux, MySQL, Git, Express, Next.js, MongoDB, Node.js, Tailwind, Django</td>
+          </tr>
+        </table>
+      </section>
       
-    </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-      </ul>
-    </section>
+      <section id="contact" class="bigger-contact">
+        <h2>Get in Touch</h2>
+        <form>
+          <fieldset>
+            <legend>Contact Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br />
+      
+            <label for "email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required rows="6" cols="40"></textarea><br />
+      
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      
+    </main>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>HTML</strong></li>
-        <li><strong>CSS</strong></li>
-        <li><strong>JavaScript</strong></li>
-        <li><strong>React</strong></li>
-      </ul>
-    </section>
+    <hr />
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <fieldset>
-          <legend>Contact Form</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea><br />
-
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
-
-
-  <hr />
-
-  <footer>
-    <p>&copy; 2023 My Software Engineer Portfolio</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; <b>2023 My Software Engineer Portfolio</b></p>
+    </footer>
+  </body>
 </html>
