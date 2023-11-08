@@ -3,6 +3,14 @@ body, h1, h2, h3, p, ul, ol, li, form, textarea, button, table {
   padding: 0;
 }
 
+:root {
+  --primary-color: color(30, 70%, 50%);
+}
+
+section:has(.special) {
+  border: 2px solid var(--primary-color);
+}
+
 body {
   background-color: white;
   font-family: "arial", Arial, sans-serif;
