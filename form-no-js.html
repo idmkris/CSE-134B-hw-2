@@ -12,10 +12,8 @@
   </head>
   <body>
     <header>
-      
       <div class="logo">
         <img src="logo.png" alt="Logo" />
-        <button id="darkModeToggle" aria-label="Toggle Light/Dark Mode">🌞🌚</button>
       </div>
       <nav>
         <ul>
@@ -105,28 +103,25 @@
 
       <section id="contact">
         <h2>Get in Touch</h2>
-        <form id="contactForm" novalidate>
-          <fieldset>
-            <legend>Contact Form</legend>
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required minlength="2" maxlength="30" />
-            
+        <form id="contactForm">
+            <fieldset>
+              <legend>Contact Form</legend>
+              
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" minlength="2" maxlength="30" />
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"/>
+      
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="6" cols="40" minlength="10" maxlength="300"></textarea>
+      
+              <input type="hidden" id="possible_bot" name="possible_bot" value="true" />
+      
+              <button type="submit" id="btn">Submit</button>
+            </fieldset>
+          </form>
     
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" />
-            <span id='error' class="error" aria-live="polite"></span>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required rows="6" cols="40" minlength="10" maxlength="300"></textarea>
-            
-    
-            <input type="hidden" id="possible_bot" name="possible_bot" value="true" />
-    
-            <button type="submit" id="btn">Submit</button>
-          </fieldset>
-        </form>
-
       
       <output id="errorOutput"></output>
       <output class="info" id="infoOutput"></output>
